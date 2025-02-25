@@ -13,7 +13,7 @@ Currently in this repository:
 | Singleton Design Pattern | 24.02.2025     |
 | Template Method Design Pattern    | 25.02.2025    |
 | Factory Method Design Pattern    |  25.02.2025  |
-| Decorator Design Pattern    |     |
+| Decorator Design Pattern    | 25.02.2025    |
 | Composite Design Pattern    |     |
 | Observer Design Pattern    |     |
 | Command Design Pattern    |     |
@@ -56,3 +56,15 @@ Also this pattern ensures that you can extend client code capabilities without m
 * The client code depends upon the abstractions (dependency injection)
 
 *NOTE:*  Use Factory Method with caution as it may create unnecessary overhead.
+
+## Decorator Design Pattern
+Use this pattern in situations when optional features need to be added to concrete objects, such as GUI elements, customizing your food order etc. Using this pattern allows extensibility without modifying the old code.
+
+* Define component interface
+* Define concrete (base) component
+* Define decorator interface
+    * Inherits compoent interface
+    * Has pointer to component interface
+    * Only argumented constructor allowed with the component as argument.
+* Concrete decorators inherit the decorator interface.
+* Stack decorators in client code.
