@@ -14,7 +14,7 @@ Currently in this repository:
 | Template Method Design Pattern    | 25.02.2025    |
 | Factory Method Design Pattern    |  25.02.2025  |
 | Decorator Design Pattern    | 25.02.2025    |
-| Composite Design Pattern    |     |
+| Composite Design Pattern    | 25.02.2025    |
 | Observer Design Pattern    |     |
 | Command Design Pattern    |     |
 
@@ -68,3 +68,14 @@ Use this pattern in situations when optional features need to be added to concre
     * Only argumented constructor allowed with the component as argument.
 * Concrete decorators inherit the decorator interface.
 * Stack decorators in client code.
+
+## Composite Design Pattern
+Use this design pattern when objects or group of objects have similar functions (respond to the same events the same way). 
+
+Examples of these would be move one file across the desktop or drag and select multiple files (create a group) and then move all of them as a group together. Another useful analogy would be when you have a box which can contain items or other boxes.
+
+* Define common functionalities in an abstract object
+* Define leaf / simple object
+* Define group / complex object
+    * This object contains a list of *abstarct objects*
+    
