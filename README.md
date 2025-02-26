@@ -15,7 +15,7 @@ Currently in this repository:
 | [Factory Method Design Pattern](#4)    |  25.02.2025  |
 | [Decorator Design Pattern](#5)    | 25.02.2025    |
 | [Composite Design Pattern](#6)    | 25.02.2025    |
-| Observer Design Pattern    |     |
+| [Observer Design Pattern](#7)    |  26.02.2025   |
 | Command Design Pattern    |     |
 
 ---
@@ -78,3 +78,15 @@ Examples of these would be move one file across the desktop or drag and select m
 * Define leaf / simple object
 * Define group / complex object
     * This object contains a list of *abstarct objects*
+
+
+## Observer Design Pattern <a id="7"></a>
+Use this design pattern if you need to design reactive behavior. For example when some observer objects need to react to state changes of a subject.
+
+* Define Observer interface. Define a public `notify()` methods for subjects to call upon changes of subject state.
+* Implement concrete observers. (e.g. What will the observer do when notified?)
+* Define Observable interface.
+    * Maintain a list of all observers attached to the observable
+    * Upon call from subject notify all observers.
+* Subjects inheriting the Observable can now add, remove and notify observers. 
+    * Good practice is to call for notify observers everytime the state of the subject changes.
