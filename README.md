@@ -16,7 +16,7 @@ Currently in this repository:
 | [Decorator Design Pattern](#5)    | 25.02.2025    |
 | [Composite Design Pattern](#6)    | 25.02.2025    |
 | [Observer Design Pattern](#7)    |  26.02.2025   |
-| Command Design Pattern    |     |
+| [Command Design Pattern](#8)    | 26.02.2025    |
 
 ---
 
@@ -90,3 +90,14 @@ Use this design pattern if you need to design reactive behavior. For example whe
     * Upon call from subject notify all observers.
 * Subjects inheriting the Observable can now add, remove and notify observers. 
     * Good practice is to call for notify observers everytime the state of the subject changes.
+
+## Command Design Pattern <a id="8"></a>
+This command pattern is used to decouple sender and receiver of requests. This design can be used to 
+parameterize objects, issue commands predefiend commands, schedule and support undo/redo facility. 
+
+An example of how undo operation is implemented is provided in `Command/Undo using Command Pattern`.
+
+* Define command interface
+* Define concrete commands, encapsulating an action that needs to be performed
+* Define receiver. Responsible for the actual work.
+* Invoker (remote controller analogy). It has reference to commands and is responsible for executing the commands.
